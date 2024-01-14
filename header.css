@@ -21,4 +21,16 @@ ul {
 .header__nav-list {
     display: flex;
     gap: 30px;
+    justify-content: center;
 }
+
+.header__nav {
+    flex-grow: 1;
+}
+
+.header__actions {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
