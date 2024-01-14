@@ -26,6 +26,12 @@ ul {
     list-style-type: none;
 }
 
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1900px;
+}
+
 .header__logo {
     width: 160px;
 }
