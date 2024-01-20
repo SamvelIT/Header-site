@@ -13,7 +13,14 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   font-family: "Merriweather";  
+}
+
+main {
+    flex-grow: 1;
 }
 
 * {
@@ -30,12 +37,6 @@ body {
 
 ul {
     list-style-type: none;
-}
-
-.container {
-    padding: 0 20px;
-    margin: 0 auto;
-    max-width: 1900px;
 }
 
 .header__logo {
@@ -62,5 +63,12 @@ ul {
     gap: 10px;
     display: flex;
     align-items: center;
+}
+
+
+
+.footer {
+    padding: 20px 0;
+    background-color: #1f1f1f;
 }
 
