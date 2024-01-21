@@ -29,6 +29,10 @@ main {
     box-sizing: border-box;
 }
 
+.header {
+    background-color: aqua;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 20px;
