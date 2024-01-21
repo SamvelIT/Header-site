@@ -2,21 +2,25 @@
     font-family: "Merriweather";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/Merriweather-Regular.ttf")
+    src: url("fonts/Merriweather-Regular.ttf");
 }
 
 @font-face {
     font-family: "Merriweather";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/Merriweather-Bold.ttf")
+    src: url("fonts/Merriweather-Bold.ttf");
+}
+
+:root {
+    --accent-color: #4183cf;
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-  font-family: "Merriweather";  
+    font-family: "Merriweather";
 }
 
 main {
@@ -30,7 +34,7 @@ main {
 }
 
 .header {
-    background-color: aqua;
+    background-color: var(--accent-color);
 }
 
 .container {
@@ -44,13 +48,16 @@ ul {
 }
 
 .header__logo {
+    max-height: 80px;
     width: 160px;
+    object-fit: contain;
 }
 
 .header__contant {
     display: flex;
     gap: 30px;
     align-items: center;
+    padding: 10px 0;
 }
 
 .header__nav-list {
@@ -69,10 +76,7 @@ ul {
     align-items: center;
 }
 
-
-
 .footer {
     padding: 20px 0;
-    background-color: #1f1f1f;
+    background-color: var(--accent-color);
 }
-
