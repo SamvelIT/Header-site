@@ -13,7 +13,7 @@
 }
 
 :root {
-    --accent-color: #4183cf;
+    --accent-color: #e72b4b;
 }
 
 body {
@@ -33,18 +33,27 @@ main {
     box-sizing: border-box;
 }
 
-.header {
-    background-color: var(--accent-color);
-}
-
 .container {
     margin: 0 auto;
     padding: 0 20px;
     max-width: 1440px;
 }
 
+.white-btn {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 14px;
+}
+
 ul {
     list-style-type: none;
+}
+
+.header {
+    background-color: var(--accent-color);
 }
 
 .header__logo {
