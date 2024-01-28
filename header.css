@@ -48,6 +48,7 @@ button {
 }
 
 .white-btn {
+    position: relative;
     font-family: "Merriweather";
     border: 1px solid white;
     background-color: transparent;
@@ -55,6 +56,30 @@ button {
     font-size: 16px;
     font-weight: 500;
     padding: 8px 14px;
+    transition: color 0.3s;
+}
+
+.white-btn span {
+    position: relative;
+}
+
+.white-btn::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    inset: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform .3s;
+    transform-origin: left center;
+}
+
+.white-btn:hover {
+    color: var(--accent-color);
+}
+
+.white-btn:hover::before {
+    transform: scaleX(1);
 }
 
 .header {
